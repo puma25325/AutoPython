@@ -1,43 +1,43 @@
 
-First Step
-you have to run these commands
+First Step<br>
+you have to run these commands<br>
 
-mkdir assets
-cd assets
-mkdir base
-mkdir credentials
-cd ../
-mkdir save
-cd save
-mkdir page
-mkdir sent
-mkdir tokens
-cd ../
+mkdir assets<br>
+cd assets<br>
+mkdir base<br>
+mkdir credentials<br>
+cd ../<br>
+mkdir save<br>
+cd save<br>
+mkdir page<br>
+mkdir sent<br>
+mkdir tokens<br>
+cd ../<br>
 
-Second Step
-in    "assets/base"   directory, Create base data files with type ["","",""] except _githubtoken.json
-these files are follows
-    _contents.json
-    _locations.json
-    _mails.json
-    _subjects.json
+Second Step<br>
+in    "assets/base"   directory, Create base data files with type ["","",""] except _githubtoken.json<br>
+these files are follows<br>
+    _contents.json<br>
+    _locations.json<br>
+    _mails.json<br>
+    _subjects.json<br>
 
-githubtoken file type is 
+githubtoken file type is <br>
 
-{
+{<br>
 	
-"GITHUB_TOKEN" : "your token"
-}
+"GITHUB_TOKEN" : "your token"<br>
+}<br>
 
-Final Step
-also you have to copy your credentail files into assets/credentials directory
-
-
-The end you are ready to run this proeject 
+Final Step<br>
+also you have to copy your credentail files into assets/credentials directory<br>
 
 
-!!!WELLCOME!!!!
+The end you are ready to run this proeject <br>
 
-and then you can run this project with command
-python main.py
+
+!!!WELLCOME!!!!<br>
+
+and then you can run this project with command<br>
+python main.py<br>
 
