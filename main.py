@@ -44,7 +44,7 @@ def send_thread(mail_address,location,mail_number):
 						file.update_page_file(f"./save/page/{mail_address}.txt",nth_count)
 						file.update_sent_file(f"./save/sent/{mail_address}.txt",email.logname,email.realname,email.mail_address,nth_count-1)
 						print(f"{mail_number} --> {mail_address} --> sent to mail {email.mail_address}")
-						random_number = random.randint(1800, 2700)
+						random_number = random.randint(6000, 8000)
 						time.sleep(random_number)  # Random delay to avoid rate limiting	
 						continue
 					else:	
