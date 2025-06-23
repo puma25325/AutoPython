@@ -14,9 +14,9 @@ HEADERS = {
 	"Authorization": f"token {GITHUB_TOKEN}"
 }
 
-def get_github_email( nth_number,location,language,created) -> User:
+def get_github_email( nth_number,location,created,extra) -> User:
 	#https://api.github.com/search/users?q=location:India+language:Python+created:>2022-01-01
-	url = f"https://api.github.com/search/users?q=location:{location}+language:{language}+created:{created}&per_page=1&page={nth_number}"
+	url = f"https://api.github.com/search/users?q=location:{location}+{extra}&per_page=1&page={nth_number}"
 	while True:
 		try:
 			response = requests.get(url,headers=HEADERS)

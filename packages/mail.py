@@ -14,6 +14,7 @@ from email.mime.text import MIMEText
 SCOPES = ['https://mail.google.com/']
 def gmail_authenticate(mail_address):
 	try:
+		print(f"authenticating ---> {mail_address}")
 		creds = None
 		if os.path.exists(f'./save/tokens/{mail_address}.pickle'):
 			with open(f'./save/tokens/{mail_address}.pickle', 'rb') as token:
@@ -26,6 +27,7 @@ def gmail_authenticate(mail_address):
 				creds = flow.run_local_server(port=633)
 			with open(f'./save/tokens/{mail_address}.pickle', 'wb') as token:
 				pickle.dump(creds, token)
+		print(f"authenticatiing success ---> {mail_address}")
 		return build('gmail', 'v1', credentials=creds)
 	except Exception as err:
 		print(f"Error in gmail_authenticate --> {err}")

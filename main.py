@@ -36,7 +36,7 @@ def send_thread(mail_address,location,mail_number):
 		while True:
 			if(check_mails(service,mail_address)):
 				email = User("","","")
-				email = github.get_github_email(nth_count,location,"python","2019-01-01..2020-01-01")
+				email = github.get_github_email(nth_count,location,"farmer&type=users&s=repositories&o=desc")
 				if(email.mail_address != "" and "github" not in email.mail_address and "@" in email.mail_address):
 					succeed = mail.send_email(service,mail_address,email.mail_address,random.choice(subject_array)+" "+email.realname,random.choice(content_array))
 					if(succeed):
